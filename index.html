@@ -12,18 +12,49 @@
     {
         "@context": "http://schema.org",
         "@type": "MedicalOrganization",
-        "name": "ZdraváRodina.cz",
-        "url": "http://www.zdravarodina.cz",
-        "telephone": "+420123456789",
-        "email": "info@zdravarodina.cz",
+        "name": "zdravotníOrganizace.cz",
+        "url": "http://www.zdravotni-organizace.cz",
+        "telephone": "+420777777777",
+        "email": "xngum019@studenti.czu.cz",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Plzeň",
-            "streetAddress": "Zdravotnická 456",
-            "postalCode": "30100",
+            "addressLocality": "Praha",
+            "streetAddress": "Kamýcká 129",
+            "postalCode": "16500",
             "addressCountry": "CZ"
         },
-        "openingHours": "Po-Pá 08:00-17:00",
+        "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Tuesday",
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "10:00",
+            "closes": "18:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "08:00",
+            "closes": "15:00"
+        }
+    ],
         "medicalSpecialty": [
             "Pediatrics", "Dentistry", "Physiotherapy"
         ]
@@ -90,13 +121,21 @@
     </section>
 
     <aside id="kontakt">
-      <h2>Kontakt a otevírací doba</h2>
-      <p>Pondělí až Pátek: 08:00 - 17:00</p>
+      <h2>Kontakt</h2>
       <address>
         Kamýcká 129, 165 00 Praha-Suchdol<br>
         Telefon: <a href="tel:+420777777777">+420 777 777 777</a><br>
         Email: <a href="mailto:xngum019@studenti.czu.cz">xngum019@studenti.czu.cz</a>
       </address>
+      <h3>Ordinační hodiny:</h3>
+      <ul>
+        <li><strong>Pondělí:</strong> 08:00–17:00</li>
+        <li><strong>Úterý:</strong> 08:00–17:00</li>
+        <li><strong>Středa:</strong> 08:00–17:00</li>
+        <li><strong>Čtvrtek:</strong> 10:00–18:00</li>
+        <li><strong>Pátek:</strong> 08:00–15:00</li>
+        <li><strong>Sobota–Neděle:</strong> Zavřeno</li>
+      </ul>
       <h3>Sledujte nás</h3>
       <ul class="social">
         <li><a href="#">Facebook</a></li>
