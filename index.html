@@ -1,106 +1,113 @@
 <!DOCTYPE html>
 <html lang="cs" itemscope itemtype="http://schema.org/MedicalOrganization">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Poskytujeme kvalitní zdravotní služby s individuálním přístupem a pečlivostí v příjemném prostředí.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Zdravotnické zařízení VitalCare">
-    <meta property="og:description" content="Kvalitní, dostupné a osobní zdravotní služby pro celou rodinu.">
-    <meta property="og:image" content="assets/logo.png">
-    <meta property="og:url" content="https://www.vitalcare.cz">
 
-    <title>VitalCare - Poskytovatel zdravotních služeb</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Poskytujeme kvalitní zdravotní služby s individuálním přístupem a pečlivostí v příjemném prostředí.">
+  <title>VitalCare - Poskytovatel zdravotních služeb</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "MedicalOrganization",
-        "name": "VitalCare",
-        "url": "https://www.vitalcare.cz",
+        "name": "ZdraváRodina.cz",
+        "url": "http://www.zdravarodina.cz",
+        "telephone": "+420123456789",
+        "email": "info@zdravarodina.cz",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Zdravotní 123",
-            "addressLocality": "Brno",
-            "postalCode": "60200",
+            "addressLocality": "Plzeň",
+            "streetAddress": "Zdravotnická 456",
+            "postalCode": "30100",
             "addressCountry": "CZ"
         },
-        "telephone": "+420123456789",
-        "email": "info@vitalcare.cz",
-        "openingHours": "Po-Pá 08:00-17:00"
+        "openingHours": "Po-Pá 08:00-17:00",
+        "medicalSpecialty": [
+            "Pediatrics", "Dentistry", "Physiotherapy"
+        ]
     }
     </script>
 </head>
+
 <body>
+  <div class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#o-nas">O nás</a></li>
+        <li><a href="#sluzby">Naše služby</a></li>
+        <li><a href="#novinky">Novinky</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
     <header>
-        <img itemprop="logo" src="assets/logo.png" alt="Logo VitalCare">
-        <nav>
-            <ul>
-                <li><a href="#o-nas">O nás</a></li>
-                <li><a href="#sluzby">Naše služby</a></li>
-                <li><a href="#novinky">Novinky</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
+      <h1>Vítejte ve VitalCare</h1>
     </header>
 
     <section id="o-nas">
-        <h1>O VitalCare</h1>
-        <p>Jsme moderní zdravotnické zařízení, které nabízí individuální přístup a efektivní léčbu v přátelském prostředí.</p>
+      <h2>O VitalCare</h2>
+      <p>Jsme moderní zdravotnické zařízení, které nabízí individuální přístup a efektivní léčbu v přátelském prostředí.
+      </p>
     </section>
 
     <section id="sluzby">
-        <h2>Naše zdravotní služby</h2>
-        <article itemprop="medicalSpecialty">
-            <h3>Ordinace praktického lékaře</h3>
-            <p>Poskytujeme preventivní péči, očkování, pravidelné preventivní prohlídky.</p>
-        </article>
-        <article itemprop="medicalSpecialty">
-            <h3>Fyzioterapie</h3>
-            <p>Nabízíme odborně vedenou rehabilitaci pro různé zdravotní obtíže.</p>
-        </article>
-        <article itemprop="medicalSpecialty">
-            <h3>Zubní ordinace</h3>
-            <p>Komplexní péče o vaše zuby a dásně s využitím nejmodernějších technologií.</p>
-        </article>
+      <h2>Naše zdravotní služby</h2>
+      <article>
+        <h3>Ordinace praktického lékaře</h3>
+        <p>Preventivní péče, očkování a prohlídky.</p>
+      </article>
+      <article>
+        <h3>Fyzioterapie</h3>
+        <p>Odborná rehabilitace při pohybových obtížích.</p>
+      </article>
+      <article>
+        <h3>Zubní ordinace</h3>
+        <p>Moderní stomatologie a dentální hygiena.</p>
+      </article>
     </section>
 
     <section id="novinky">
-        <h2>Novinky a aktuality</h2>
-        <article>
-            <h3>Nový ordinující lékař MUDr. Petr Novák</h3>
-            <time datetime="2023-10-05">5. Října 2023</time>
-            <p>S radostí představujeme novou posilu našeho týmu: zkušeného praktického lékaře Petra Nováka.</p>
-        </article>
-        <article>
-            <h3>Zavedení nových rehabilitačních cvičení</h3>
-            <time datetime="2023-09-22">22. Září 2023</time>
-            <p>Zařadili jsme novou řadu rehabilitačních služeb pro pacienty s pohybovými obtížemi.</p>
-        </article>
-        <article>
-            <h3>Sleva na dentální hygienu 25%</h3>
-            <time datetime="2023-09-10">10. Září 2023</time>
-            <p>Připravili jsme pro vás podzimní akci na dentální hygienu až do konce roku.</p>
-        </article>
+      <h2>Novinky a aktuality</h2>
+      <article>
+        <h3>Nový ordinující lékař MUDr. Petr Novák</h3>
+        <time datetime="2024-10-05">5. Října 2024</time>
+        <p>S radostí představujeme nového praktického lékaře Petra Nováka.</p>
+      </article>
+      <article>
+        <h3>Zavedení nových rehabilitačních cvičení</h3>
+        <time datetime="2024-09-22">22. Září 2024</time>
+        <p>Nová řada služeb rehabilitace pro pohybové obtíže.</p>
+      </article>
+      <article>
+        <h3>Sleva na dentální hygienu 25%</h3>
+        <time datetime="2024-09-10">10. Září 2024</time>
+        <p>Podzimní akce na dentální hygienu až do konce roku.</p>
+      </article>
     </section>
 
     <aside id="kontakt">
-        <h2>Otevírací doba</h2>
-        <p itemprop="openingHours">Pondělí až Pátek: 08:00 - 17:00</p>
-        <address>
-            <span itemprop="address">Zdravotní 123, Brno, 60200</span><br>
-            Telefon: <a itemprop="telephone" href="tel:+420123456789">+420 123 456 789</a><br>
-            Email: <a itemprop="email" href="mailto:info@vitalcare.cz">info@vitalcare.cz</a>
-        </address>
-        <h3>Sledujte nás</h3>
-        <ul>
-            <li><a href="#"><img src="assets/facebook.png" alt="Facebook logo">Facebook</a></li>
-            <li><a href="#"><img src="assets/twitter.png" alt="Twitter logo">Twitter</a></li>
-        </ul>
+      <h2>Kontakt a otevírací doba</h2>
+      <p>Pondělí až Pátek: 08:00 - 17:00</p>
+      <address>
+        Kamýcká 129, 165 00 Praha-Suchdol<br>
+        Telefon: <a href="tel:+420777777777">+420 777 777 777</a><br>
+        Email: <a href="mailto:xngum019@studenti.czu.cz">xngum019@studenti.czu.cz</a>
+      </address>
+      <h3>Sledujte nás</h3>
+      <ul class="social">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
     </aside>
 
     <footer>
-        <p>© 2025 VitalCare. Všechna práva vyhrazena.</p>
+      <p>© 2025 Mirek Nguyen. Všechna práva vyhrazena.</p>
     </footer>
+  </div>
 </body>
+
 </html>
