@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="PostalCodeType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\+\d{3}\d{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DayOfWeekType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Pondělí"/>
+      <xs:enumeration value="Úterý"/>
+      <xs:enumeration value="Středa"/>
+      <xs:enumeration value="Čtvrtek"/>
+      <xs:enumeration value="Pátek"/>
+      <xs:enumeration value="Sobota"/>
+      <xs:enumeration value="Neděle"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="OpenHourType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{2}:\d{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ServiceType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Main Data Structure -->
+  <xs:element name="HealthcareData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clinics">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Clinic" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="xs:string"/>
+                    <xs:element name="Address">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Street"/>
+                          <xs:element name="City"/>
+                          <xs:element name="PostalCode" type="PostalCodeType"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Phone" type="PhoneType"/>
+                          <xs:element name="Email" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="OpeningHours">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Day" minOccurs="1" maxOccurs="7">
+                            <xs:complexType>
+                              <xs:attribute name="Name" type="DayOfWeekType"/>
+                              <xs:attribute name="Open" type="OpenHourType"/>
+                              <xs:attribute name="Close" type="OpenHourType"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Services">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Service" minOccurs="1" maxOccurs="5">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="ServiceType">
+                                  <xs:attribute name="Price" type="xs:decimal"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="currency" type="xs:string"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

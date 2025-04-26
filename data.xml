@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HealthcareData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="schema.xsd">
+
+  <Clinics>
+
+    <Clinic id="C1">
+      <Name>Rodinná klinika Úsměv</Name>
+      <Address>
+        <Street>Zlínská 77</Street>
+        <City>Zlín</City>
+        <PostalCode>76001</PostalCode>
+      </Address>
+      <Contacts>
+        <Phone>+420603123456</Phone>
+        <Email>info@klinikausmev.cz</Email>
+      </Contacts>
+      <OpeningHours>
+        <Day Name="Pondělí" Open="08:00" Close="16:00" />
+        <Day Name="Úterý" Open="08:00" Close="16:00" />
+        <Day Name="Středa" Open="09:00" Close="17:00" />
+      </OpeningHours>
+      <Services currency="CZK">
+        <Service Price="500">Preventivní vyšetření</Service>
+        <Service Price="1500">Dentální hygiena</Service>
+      </Services>
+    </Clinic>
+
+    <Clinic id="C2">
+      <Name>MediCare Plzeň</Name>
+      <Address>
+        <Street>Smetanova 34</Street>
+        <City>Plzeň</City>
+        <PostalCode>30100</PostalCode>
+      </Address>
+      <Contacts>
+        <Phone>+420602987321</Phone>
+        <Email>kontakt@medicareplzen.cz</Email>
+      </Contacts>
+      <OpeningHours>
+        <Day Name="Čtvrtek" Open="10:00" Close="18:00" />
+        <Day Name="Pátek" Open="08:00" Close="15:00" />
+      </OpeningHours>
+      <Services currency="CZK">
+        <Service Price="700">Fyzioterapie</Service>
+        <Service Price="900">Masáže zad</Service>
+        <Service Price="2200">Komplexní rehabilitace</Service>
+      </Services>
+    </Clinic>
+
+    <Clinic id="C3">
+      <Name>Zdravíčko Praha</Name>
+      <Address>
+        <Street>Karlínská 120</Street>
+        <City>Praha</City>
+        <PostalCode>18000</PostalCode>
+      </Address>
+      <Contacts>
+        <Phone>+420606555666</Phone>
+        <Email>recepce@zdravickopraha.cz</Email>
+      </Contacts>
+      <OpeningHours>
+        <Day Name="Pondělí" Open="08:00" Close="16:30" />
+        <Day Name="Úterý" Open="08:30" Close="16:30" />
+        <Day Name="Středa" Open="08:00" Close="16:00" />
+        <Day Name="Pátek" Open="08:00" Close="14:30" />
+      </OpeningHours>
+      <Services currency="CZK">
+        <Service Price="800">Oční prohlídka</Service>
+        <Service Price="750">Konzultace výživy</Service>
+      </Services>
+    </Clinic>
+
+    <Clinic id="C4">
+      <Name>Zdravotní středisko Vitalis</Name>
+      <Address>
+        <Street>Vitální 88</Street>
+        <City>Olomouc</City>
+        <PostalCode>77900</PostalCode>
+      </Address>
+      <Contacts>
+        <Phone>+420604888999</Phone>
+        <Email>info@vitalis-olomouc.cz</Email>
+      </Contacts>
+      <OpeningHours>
+        <Day Name="Středa" Open="07:00" Close="15:00" />
+        <Day Name="Čtvrtek" Open="09:00" Close="17:00" />
+        <Day Name="Pátek" Open="08:00" Close="15:00" />
+      </OpeningHours>
+      <Services currency="CZK">
+        <Service Price="400">Laboratorní krevní testy</Service>
+        <Service Price="600">Preventivní kontrolla</Service>
+        <Service Price="950">Interní vyšetření</Service>
+      </Services>
+    </Clinic>
+
+    <Clinic id="C5">
+      <Name>Poliklinika Harmonie</Name>
+      <Address>
+        <Street>Lesní cesta 265</Street>
+        <City>Brno</City>
+        <PostalCode>60200</PostalCode>
+      </Address>
+      <Contacts>
+        <Phone>+420607333444</Phone>
+        <Email>ordinace@harmonie-brno.cz</Email>
+      </Contacts>
+      <OpeningHours>
+        <Day Name="Úterý" Open="07:30" Close="15:30" />
+        <Day Name="Středa" Open="07:30" Close="15:30" />
+        <Day Name="Čtvrtek" Open="09:00" Close="17:00" />
+        <Day Name="Pátek" Open="08:00" Close="14:00" />
+      </OpeningHours>
+      <Services currency="CZK">
+        <Service Price="550">ORL vyšetření</Service>
+        <Service Price="700">Léčba alergií</Service>
+        <Service Price="1200">Diagnostické sono</Service>
+      </Services>
+    </Clinic>
+
+  </Clinics>
+
+</HealthcareData>
