@@ -84,7 +84,7 @@ footer {
     body { flex-direction: column; }
     .sidebar {
         width: 100%;
-        position: relative; /* No sticky on mobile */
+        position: relative;
         min-height: auto;
         height: auto;
         padding-top: 0;
